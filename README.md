@@ -1,0 +1,2 @@
+# Sign-Language-Translator-Web-App
+This web application will be presented as the senior project for my Computer Science major. The project goal is to create a web application that can translate sign language to the English language. This application will use the main concepts of web development and artificial intelligence for sign language and static-gesture recognition. It will benefit app users who don't know sign language and have the need to communicate through it daily.  
