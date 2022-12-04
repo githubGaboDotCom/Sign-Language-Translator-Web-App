@@ -1,0 +1,133 @@
+video {
+    position: fixed;
+    object-fit: cover;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.signin_container {
+    height: 100vh;
+    display: flex;
+    object-fit: contain;
+}
+
+.Login_Box_Container {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    position: absolute;
+    margin-top: 140px;
+}
+
+.Login_Box {
+    width: 350px;
+    height: 370px;
+    margin-left: 1%;
+    padding-top: 35px;
+    background-color: rgb(1, 1, 71, 0.6);
+    color: white;
+    border-radius: 5px;
+}
+
+.Login_Icon_Container {
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    margin-top: 105px;
+    justify-content: center;
+    display: flex;
+}
+
+#Login_Icon {
+    position: absolute; 
+    margin-left: 1%; 
+    font-size: 65px;
+    padding-left: 7px;
+    padding-top: 4px;
+    color: white;
+    background-color: rgb(1, 1, 71, 0.6);
+    border-radius: 50%;
+    width: 68px;
+    height: 68px;
+    
+
+}
+
+form .Input_Field .Login_Button {
+    font-size: 15pt;
+    padding-top: 0%;
+    width: 100px;
+    margin-left: 100px;
+    height: 50px;
+    color: white;
+    border-style: solid;
+    background-color: #01013b;
+    cursor: pointer;
+}
+
+form .Input_Field .Forgot_Password {
+    padding-top: 12px;
+    padding-bottom: 20px;
+}
+
+form .Input_Field .Forgot_Password #Forgot {
+    color: white;
+}
+
+form .Input_Field i {
+    font-size: 28px;
+    padding-right: 10px;
+    height: 35px;
+    text-align: center;
+    padding-top: 4px;
+    padding-left: 0px;
+}
+
+form {
+    padding-left: 20px;
+}
+
+form .Input_Field {
+    height: 45px;
+    padding-bottom: 25px;
+}
+
+form .Input_Field input {
+    height: 25px;
+    width: 80%;
+    padding-top: 9px;
+    background-color: rgba(5, 0, 5, 0.3);
+    color: aliceblue;
+    font-size: 12pt;
+}
+
+form #Password_Id {
+    padding-bottom: 0%;
+}
+
+::placeholder {
+    color: aliceblue;
+}
+
+h3 {
+    text-align: center;
+    font-size: 19pt;
+}
+
+.dontHaveAccount {
+    color: white;
+    padding-top: 25px;
+}
+
+.error {
+    color: red;
+    font-size: 13pt;
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 5px;
+
+}
+
