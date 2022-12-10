@@ -14,3 +14,40 @@ video {
     display: flex;
     object-fit: contain;
 }
+
+.Instructions_Box_Container {
+    /* position: absolute; */
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    margin-top: 100px;
+    height: 450px;
+}
+
+.Instructions_Box {
+    width: 650px;
+    height: 450px;
+    color: whitesmoke;
+    background-color: rgb(1, 1, 71, 0.6);
+    border-style: solid;
+    overflow-y: scroll;
+    padding: 1px 15px;
+    
+}
+
+.Instructions_Box h2 {
+    color: white;
+    text-decoration: underline;
+}
+
+.Instructions_Box h3 {
+    text-decoration: underline;
+    color: white;
+    text-align: left;
+}
+
+.Instructions_Box p {
+    text-align: justify;
+    font-size: 13pt;
+
+}

@@ -10,6 +10,10 @@ import PageNotFound from './components/WebsitePages/PageNotFound';
 import UserSession from './components/WebsitePages/UserSession';
 import ForgotPassword from './components/WebsitePages/ForgotPassword';
 import ResetPassword from './components/WebsitePages/ResetPassword';
+import RecordVideo from './components/WebsitePages/RecordVideo';
+import SendEmail from './components/WebsitePages/SendEmail';
+import LearnSignLanguage from './components/WebsitePages/LearnSignLanguage';
+import { ImageSlider } from './components/WebsitePages/Utilities/ImageSlider';
 
 function App() {
   return (
@@ -24,8 +28,11 @@ function App() {
                     <Route path="/SignIn" element = {<SignIn />} />
                     <Route path="/SignUp" element = {<SignUp />} />
                     <Route path="/UserSession" element = {<UserSession />} />
+                    <Route path="/RecordVideo" element = {<RecordVideo />} />
                     <Route path="/ForgotPassword" element = {<ForgotPassword />}/>
                     <Route path="/ResetPassword/:id/:token" element = {<ResetPassword />}/>
+                    <Route path="/SendEmail" element = {<SendEmail />}/>
+                    <Route path="/LearnSignLanguage" element = {<LearnSignLanguage imageSlides={ImageSlider} />}/>
                     <Route path="*" element = {<PageNotFound />} />
                 </Routes>
             </div>

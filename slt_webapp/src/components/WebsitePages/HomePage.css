@@ -12,5 +12,73 @@ video {
     height: 100vh;
     width: 100%;
     display: flex;
+    flex-direction: column;
     object-fit: contain;
 }
+
+.mainTitleContainer {
+   display: flex; 
+   justify-content: center;
+   width: 100%; 
+}
+
+.mainTitleContainer h1 {
+    margin-top: 90px;
+    font-size: 70pt;
+    color: whitesmoke;
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+    margin-bottom: 0%;
+
+}
+
+.quoteContainer {
+    width: 100%;
+    margin-top: -20px;
+}
+
+.quoteContainer #firstP {
+    margin-top: 0%;
+    font-size: 20pt;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.quoteContainer #secondP {
+    color: whitesmoke;
+    font-size: 20pt;
+    text-align: center;
+    font-family: 'Great Vibes', cursive;
+}
+
+.homePageButtons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    
+}
+
+.homePageSignUpButton {
+    width: 150px;
+    font-size: 20pt;
+    background-color: rgb(1, 1, 71, 0.7);
+    color: white;
+    padding: 10px;
+    border-color: whitesmoke;
+    cursor: pointer;
+}
+
+.homePagelogInButton {
+    width: 150px;
+    font-size: 20pt;
+    margin-left: 180px;
+    padding: 10px;
+    border-color: whitesmoke;
+    background-color: rgb(1, 1, 71, 0.7);
+    color: white;
+    cursor: pointer;
+}
+
+
+

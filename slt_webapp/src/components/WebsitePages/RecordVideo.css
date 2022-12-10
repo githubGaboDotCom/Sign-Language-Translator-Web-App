@@ -1,0 +1,85 @@
+.recordvideobackgroundVideo {
+    position: fixed;
+    object-fit: cover;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.recordvideo_container {
+    height: 115vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    object-fit: contain;
+    flex-direction: column;
+}
+
+.recordvideostatusTitle {
+    display: flex; 
+    justify-content: center;
+    width: 100%; 
+}
+
+.recordvideostatusTitle h1 {
+    color: red;
+    font-size: 25pt;
+    z-index: 10;
+    margin-top: 100px;
+
+}
+
+.recordvideoStyle {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0; 
+    text-align: center;
+    z-index: 9;
+    width: 640px;
+    height: 480px;
+    margin-top: 0;
+}
+
+.recordvideopageButtons {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    /* flex-direction: column; */
+    margin-top: 460px;
+    
+}
+
+.recordvideorecordingButton {
+    width: 230px;
+    font-size: 15pt;
+    background-color: rgb(1, 1, 71, 0.7);
+    color: white;
+    padding: 10px;
+    border-color: whitesmoke;
+    cursor: pointer;
+}
+
+.recordvideostopButtonon {
+    width: 200px;
+    font-size: 15pt;
+    margin-left: 180px;
+    border-color: whitesmoke;
+    background-color: rgb(1, 1, 71, 0.7);
+    color: white;
+    cursor: pointer;
+}
+
+.toPageUserSession {
+    width: 200px;
+    font-size: 15pt;
+    margin-left: 180px;
+    border-color: whitesmoke;
+    background-color: rgb(1, 1, 71, 0.7);
+    color: white;
+    cursor: pointer;
+}

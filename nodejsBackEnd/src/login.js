@@ -2,8 +2,8 @@ import express from 'express';
 import { mysqlDB } from './mysqlDB.js';
 import bcrypt from 'bcrypt';
 import jwt from 'jsonwebtoken';
-import * as dotenv from 'dotenv';
 import nodemailer from 'nodemailer';
+import * as dotenv from 'dotenv';
 dotenv.config();
 
 const login = express.Router();
@@ -117,23 +117,10 @@ login.post("/forgotPassword", (req, res) => {
             }
         });  
 
-        // sendResetLink(resetLink, mailOptions, res);
-
     });
     
     res.status(200).json("Email has been sent!");
 });
-
-// const sendResetLink = (resetLink, mailOptions, res) => {
-//     transport.sendMail(mailOptions, function(error, info){
-//         if (error) {
-//             console.log(error);
-//         } else {
-//             console.log('Email sent: ' + info.response);
-//         }
-//     });  
-    
-// };
 
 
 login.post("/ResetPassword", async (req, res) => {
@@ -172,7 +159,6 @@ login.post("/changePassword", (req, res) => {
         const newsalt = bcrypt.genSaltSync(10);
         const hashedNewPassword = bcrypt.hashSync(req.body[0].password, newsalt);
        
-        // const updateQuery = "INSERT INTO users(`username`, `password`, `email`, `firstname`, `lastname`) VALUES (?)";
         const updateQuery = "UPDATE users SET password = ? WHERE idusers = ?";
 
         mysqlDB.query(updateQuery, [hashedNewPassword, req.body[1].id], (err, data) => {
@@ -183,10 +169,38 @@ login.post("/changePassword", (req, res) => {
             }
         });
 
-
-
-
     });
+});
+
+login.post("/SendEmail", async (req, res) => {
+    const queryUserDB2 = "SELECT * FROM users WHERE username = ?";
+    mysqlDB.query(queryUserDB2, [req.body.username], (err, data) => {
+        if (err) {
+            return res.json(err);
+        }
+
+        if (data.length === 0){
+            return res.status(404).json("Error: Username not found");
+        }
+    
+        var sendEmailOptions = {
+            from: process.env.EMAIL_USER,
+            to: data[0].email,
+            subject: req.body.messagetitle,
+            text: req.body.message 
+        };
+
+        transport.sendMail(sendEmailOptions, function(error, info){
+            if (error) {
+                console.log(error);
+            } else {
+                console.log('Email sent: ' + info.response);
+            }
+        }); 
+        
+        res.status(200).json("Email has been sent for feature to send message!");
+
+    }); 
 });
 
 
