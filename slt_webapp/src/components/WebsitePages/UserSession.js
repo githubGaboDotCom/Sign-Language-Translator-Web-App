@@ -11,9 +11,8 @@ const UserSession = () => {
     const {currentUser} = useContext(ReactContextAPI);
     const myWebCamRef = useRef(null);
     const canvasRef = useRef(null);
-    // http://localhost:8000/api/tsjMyModel/model.json
     const loadTSJmodel = async () => {
-        const model = await tf.loadGraphModel("https://tensorflowjsrealtimemodel.s3.au-syd.cloud-object-storage.appdomain.cloud/model.json");
+        const model = await tf.loadGraphModel("http://localhost:8000/api/tsjMyModel/model.json");
         
         setInterval(() => {
             detect(model);
@@ -41,9 +40,9 @@ const UserSession = () => {
             console.log(modelObject);
 
             const boxes = await modelObject[1].array();
-            // console.log(boxes);
+            //console.log(boxes);
             const classes = await modelObject[2].array();
-            // console.log(classes);
+            //console.log(classes);
             const scores = await modelObject[4].array();
             // console.log(scores);
 
@@ -61,14 +60,14 @@ const UserSession = () => {
             //     ctx.stroke();
 
             // });
-            // ctx.beginPath();
-            // ctx.strokeStyle = "blue";
-            // ctx.lineWidth = 5;
-            // ctx.fillStyle = 'white';
-            // ctx.rect(30, 30, 50, 50);
-            // ctx.stroke();
+            ctx.beginPath();
+            ctx.strokeStyle = "blue";
+            ctx.lineWidth = 5;
+            ctx.fillStyle = 'white';
+            ctx.rect(30, 30, 50, 50);
+            ctx.stroke();
 
-            requestAnimationFrame(()=>{drawRectangle(boxes[0], classes[0], scores[0], 0.8, videoWidth, videoHeight, ctx)});
+            // requestAnimationFrame(()=>{drawRectangle(boxes[0], classes[0], scores[0], 0.8, videoWidth, videoHeight, ctx)});
 
             tf.dispose(videoImage);
             tf.dispose(resizedImage);

@@ -64,13 +64,3 @@ const NavigationMenu = () => {
 
 export default NavigationMenu;
 
-// function NavBarLink ({to, children, ...props}) {
-//     const resolvedPath = useResolvedPath(to);
-//     const webPageActive = useMatch({path: resolvedPath.pathname, end: true});
-//     return (
-//         <Link to={to} {...props} style={webPageActive ? "background-color: red;" : ""}>
-//             {children}
-//         </Link>
-//     );
-// }
-
