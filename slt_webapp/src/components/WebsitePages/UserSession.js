@@ -60,19 +60,19 @@ const UserSession = () => {
             //     ctx.stroke();
 
             // });
-            ctx.beginPath();
-            ctx.strokeStyle = "blue";
-            ctx.lineWidth = 5;
-            ctx.fillStyle = 'white';
-            ctx.rect(30, 30, 50, 50);
-            ctx.stroke();
+            // ctx.beginPath();
+            // ctx.strokeStyle = "blue";
+            // ctx.lineWidth = 5;
+            // ctx.fillStyle = 'white';
+            // ctx.rect(30, 30, 50, 50);
+            // ctx.stroke();
 
-            // requestAnimationFrame(()=>{drawRectangle(boxes[0], classes[0], scores[0], 0.8, videoWidth, videoHeight, ctx)});
+            requestAnimationFrame(()=>{drawRectangle(boxes[0], classes[0], scores[0], 0.8, videoWidth, videoHeight, ctx)});
 
             tf.dispose(videoImage);
             tf.dispose(resizedImage);
-            tf.dispose(expanded);
             tf.dispose(casted);
+            tf.dispose(expanded);
             tf.dispose(modelObject);
         }
     };
