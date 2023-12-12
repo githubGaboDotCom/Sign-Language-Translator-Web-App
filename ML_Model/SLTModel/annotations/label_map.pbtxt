@@ -1,0 +1,40 @@
+item { 
+	name:'Church'
+	id:1
+}
+item { 
+	name:'Cousin'
+	id:2
+}
+item { 
+	name:'Dad'
+	id:3
+}
+item { 
+	name:'Eight'
+	id:4
+}
+item { 
+	name:'God'
+	id:5
+}
+item { 
+	name:'House'
+	id:6
+}
+item { 
+	name:'People'
+	id:7
+}
+item { 
+	name:'Red'
+	id:8
+}
+item { 
+	name:'Thank you'
+	id:9
+}
+item { 
+	name:'To Study'
+	id:10
+}

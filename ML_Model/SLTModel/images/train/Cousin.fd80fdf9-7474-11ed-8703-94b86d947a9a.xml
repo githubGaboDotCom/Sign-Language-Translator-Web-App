@@ -1,0 +1,26 @@
+<annotation>
+	<folder>Cousin</folder>
+	<filename>Cousin.fd80fdf9-7474-11ed-8703-94b86d947a9a.jpg</filename>
+	<path>C:\Users\Gabo\Desktop\My_Github_Repositories\Sign-Language-Translator-Web-App\SLTPythonMLModel\src\Create-Images\SLT-images\Cousin\Cousin.fd80fdf9-7474-11ed-8703-94b86d947a9a.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>640</width>
+		<height>480</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Cousin</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>262</xmin>
+			<ymin>167</ymin>
+			<xmax>438</xmax>
+			<ymax>318</ymax>
+		</bndbox>
+	</object>
+</annotation>

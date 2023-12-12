@@ -1,22 +1,14 @@
-// const labelMap = {
-//     1:{name: "Church", color:"blue"},
-//     2:{name:"Cousin", color: "yellow"},
-//     3:{name:"Dad", color:'green'},
-//     4:{name:"Eight", color:"brown"},
-//     5:{name:"God", color: "white"},
-//     6:{name:"House", color:"pink"},
-//     7:{name:"People", color:"black"},
-//     8:{name:"Red", color:"red"},
-//     9:{name:"Thank you", color:"orange"},
-//     10:{name:"To study", color:"gray"},
-// }
-
 const labelMap = {
-    1:{name:'Hello', color:'red'},
-    2:{name:'Thank You', color:'yellow'},
-    3:{name:'I Love You', color:'lime'},
-    4:{name:'Yes', color:'blue'},
-    5:{name:'No', color:'purple'},
+    1:{name: "Church", color:"blue"},
+    2:{name:"Cousin", color: "yellow"},
+    3:{name:"Dad", color:'green'},
+    4:{name:"Eight", color:"brown"},
+    5:{name:"God", color: "white"},
+    6:{name:"House", color:"pink"},
+    7:{name:"People", color:"black"},
+    8:{name:"Red", color:"red"},
+    9:{name:"Thank you", color:"orange"},
+    10:{name:"To study", color:"gray"},
 }
 
 export const drawRectangle = (boxes, classes, scores, threshold, videoWidth, videoHeight, ctx)=>{

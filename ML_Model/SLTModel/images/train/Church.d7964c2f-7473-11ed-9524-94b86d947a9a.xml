@@ -1,0 +1,26 @@
+<annotation>
+	<folder>Church</folder>
+	<filename>Church.d7964c2f-7473-11ed-9524-94b86d947a9a.jpg</filename>
+	<path>C:\Users\Gabo\Desktop\My_Github_Repositories\Sign-Language-Translator-Web-App\SLTPythonMLModel\src\Create-Images\SLT-images\Church\Church.d7964c2f-7473-11ed-9524-94b86d947a9a.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>640</width>
+		<height>480</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Church</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>164</xmin>
+			<ymin>179</ymin>
+			<xmax>379</xmax>
+			<ymax>478</ymax>
+		</bndbox>
+	</object>
+</annotation>

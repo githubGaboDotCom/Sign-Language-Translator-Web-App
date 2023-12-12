@@ -1,0 +1,26 @@
+<annotation>
+	<folder>God</folder>
+	<filename>God.158ae36b-7474-11ed-8507-94b86d947a9a.jpg</filename>
+	<path>C:\Users\Gabo\Desktop\My_Github_Repositories\Sign-Language-Translator-Web-App\SLTPythonMLModel\src\Create-Images\SLT-images\God\God.158ae36b-7474-11ed-8507-94b86d947a9a.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>640</width>
+		<height>480</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>God</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>201</xmin>
+			<ymin>96</ymin>
+			<xmax>408</xmax>
+			<ymax>330</ymax>
+		</bndbox>
+	</object>
+</annotation>

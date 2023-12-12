@@ -1,0 +1,26 @@
+<annotation>
+	<folder>Dad</folder>
+	<filename>Dad.21481a2a-7475-11ed-ab44-94b86d947a9a.jpg</filename>
+	<path>C:\Users\Gabo\Desktop\My_Github_Repositories\Sign-Language-Translator-Web-App\SLTPythonMLModel\src\Create-Images\SLT-images\Dad\Dad.21481a2a-7475-11ed-ab44-94b86d947a9a.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>640</width>
+		<height>480</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Dad</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>82</xmin>
+			<ymin>72</ymin>
+			<xmax>322</xmax>
+			<ymax>257</ymax>
+		</bndbox>
+	</object>
+</annotation>
