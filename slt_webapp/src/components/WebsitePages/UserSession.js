@@ -40,32 +40,10 @@ const UserSession = () => {
             console.log(modelObject);
 
             const boxes = await modelObject[1].array();
-            //console.log(boxes);
             const classes = await modelObject[2].array();
-            //console.log(classes);
             const scores = await modelObject[4].array();
-            // console.log(scores);
 
             const ctx = canvasRef.current.getContext("2d");
-            // const [y,x,height,width] = boxes[0];
-            
-            // modelObject.forEach(() => {
-            //     console.log("Receving input!")
-            //     ctx.beginPath();
-            //     ctx.strokeStyle = "blue";
-            //     ctx.lineWidth = 5;
-            //     ctx.fillStyle = 'white';
-            //     ctx.rect(30, 30, 50, 50);
-            //     // ctx.rect(x * videoWidth, y * videoHeight, 50 * width / 2, 50 * height / 1.5);
-            //     ctx.stroke();
-
-            // });
-            // ctx.beginPath();
-            // ctx.strokeStyle = "blue";
-            // ctx.lineWidth = 5;
-            // ctx.fillStyle = 'white';
-            // ctx.rect(30, 30, 50, 50);
-            // ctx.stroke();
 
             requestAnimationFrame(()=>{drawRectangle(boxes[0], classes[0], scores[0], 0.8, videoWidth, videoHeight, ctx)});
 
